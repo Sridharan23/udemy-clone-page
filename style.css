@@ -40,10 +40,17 @@ body {
     display: none;
     position: absolute;
     padding: 10px;
+    z-index: 1;
 }
 
 .udemy:hover .udemy__popup{
     display: block;
+   
+}
+
+.udemy_.udemy__popup{
+    color:black;
+    background-color: white;
 }
 .navbar__s2 {
     color: black;
@@ -121,6 +128,15 @@ body {
     color: white;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: #A435F0 solid 1px;
+}
+
+.categories p:hover{
+    background-color: white;
+    color: #A435F0;
+    transition: 1s;
+
 }
 
 .sale-img {
@@ -143,8 +159,26 @@ body {
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 5s;
+    
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+
+
 }
 
+@keyframes zoom{
+0%{
+transform: scale(o);
+opacity: 0;
+}
+100%{
+transform: scale(1);
+opacity: 1;
+}
+}
 .recommended {
 
 
