@@ -29,9 +29,24 @@ body {
 
 .navbar__s1__title {
     color: #8D3ED8;
+    cursor: pointer;
 }
 
+
+.udemy__popup{
+    border: black solid 1px;
+    color: black;
+    background-color: white;
+    display: none;
+    position: absolute;
+    padding: 10px;
+}
+
+.udemy:hover .udemy__popup{
+    display: block;
+}
 .navbar__s2 {
+    color: black;
     display: flex;
     gap: 10px;
     padding: 10px;
@@ -47,11 +62,10 @@ body {
 }
 
 .navbar__s2 input {
-
     border: none;
     font-size: 16px;
     width: 100%;
-    color: transparent;
+    
 
 }
 
